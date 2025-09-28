@@ -12,24 +12,32 @@ const projects = [
     description: "Developed a real-time chat application supporting over 500 concurrent users with seamless message delivery and minimal latency.",
     image: PlaceHolderImages.find(p => p.id === 'project-chat'),
     tags: ["React.js", "Node.js", "Socket.IO", "MongoDB"],
-    liveUrl: "#",
-    githubUrl: "https://github.com/AkashAnuragi/Chat-Application",
+    liveUrl: "https://fantastic-churros-1cd5d2.netlify.app/",
+    githubUrl: "https://github.com/AkashAnuragi/The-Web-Chat-App",
   },
   {
     title: "Weather Webpage",
     description: "Developed a real-time weather app with a fully responsive UI, integrating OpenWeatherMap API for data from over 250,000 cities.",
     image: PlaceHolderImages.find(p => p.id === 'project-weather'),
     tags: ["HTML", "CSS", "JavaScript", "API"],
-    liveUrl: "#",
-    githubUrl: "https://github.com/AkashAnuragi/weather-webpage",
+    liveUrl: "https://akashanuragi.github.io/Weather-App/",
+    githubUrl: "https://github.com/AkashAnuragi/Weather-App",
   },
   {
-    title: "Project Three",
-    description: "A mobile-first e-commerce site with a focus on performance and accessibility. Seamlessly integrated with Stripe.",
-    image: PlaceHolderImages.find(p => p.id === 'project-3'),
-    tags: ["React Native", "GraphQL", "Stripe"],
-    liveUrl: "#",
-    githubUrl: "https://github.com/AkashAnuragi",
+    title: "Tic-Tac-Toe",
+    description: "A classic Tic-Tac-Toe game built with vanilla JavaScript, HTML, and CSS.",
+    image: PlaceHolderImages.find(p => p.id === 'project-tic-tac-toe'),
+    tags: ["HTML", "CSS", "JavaScript"],
+    liveUrl: "https://akashanuragi.github.io/Tic-Tac-Toe/",
+    githubUrl: "https://github.com/AkashAnuragi/Tic-Tac-Toe",
+  },
+  {
+    title: "Password Generator",
+    description: "A simple and effective password generator to create strong, random passwords.",
+    image: PlaceHolderImages.find(p => p.id === 'project-password-generator'),
+    tags: ["HTML", "CSS", "JavaScript"],
+    liveUrl: "https://akashanuragi.github.io/Password-Generator/",
+    githubUrl: "https://github.com/AkashAnuragi/Password-Generator",
   }
 ];
 
@@ -43,7 +51,7 @@ export default function ProjectsSection() {
             Here are a few projects I've worked on recently.
           </p>
         </div>
-        <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-2">
           {projects.map((project, index) => (
             <div key={index} className="group [perspective:1000px]">
               <Card className="relative h-full overflow-hidden bg-card transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(10deg)_rotateX(5deg)] group-hover:shadow-2xl">

@@ -3,8 +3,13 @@ import React, { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { MoveRight } from "lucide-react";
+import Image from "next/image";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 export default function HeroSection() {
+  const profilePhoto = PlaceHolderImages.find(
+    (image) => image.id === "profile-photo"
+  );
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -37,6 +42,16 @@ export default function HeroSection() {
       </div>
 
       <div className="relative z-10 text-center animate-fade-in-up">
+        {profilePhoto && (
+            <div className="relative mx-auto mb-8 h-48 w-48 overflow-hidden rounded-full border-4 border-primary/50 shadow-lg">
+                <Image
+                src={profilePhoto.imageUrl}
+                alt={profilePhoto.description}
+                layout="fill"
+                objectFit="cover"
+                />
+            </div>
+        )}
         <h1 className="font-headline text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
           <span className="block">Hello, I'm Akash Anuragi</span>
           <span className="block text-primary">Building 3D Web Experiences</span>

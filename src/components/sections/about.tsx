@@ -19,7 +19,7 @@ export default function AboutSection() {
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
           <div className="group relative flex justify-center">
             <Image
-              src="/images/profile.jpg"
+              src="/images/tech.png"
               alt="A profile photo of Akash Anuragi"
               width={500}
               height={500}
