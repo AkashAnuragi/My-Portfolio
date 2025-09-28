@@ -13,7 +13,7 @@ const projects = [
     image: PlaceHolderImages.find(p => p.id === 'project-1'),
     tags: ["Next.js", "Tailwind CSS", "TypeScript"],
     liveUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/AkashAnuragi",
   },
   {
     title: "Project Two",
@@ -21,7 +21,7 @@ const projects = [
     image: PlaceHolderImages.find(p => p.id === 'project-2'),
     tags: ["React", "Firebase", "shadcn/ui"],
     liveUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/AkashAnuragi",
   },
   {
     title: "Project Three",
@@ -29,7 +29,7 @@ const projects = [
     image: PlaceHolderImages.find(p => p.id === 'project-3'),
     tags: ["React Native", "GraphQL", "Stripe"],
     liveUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/AkashAnuragi",
   }
 ];
 

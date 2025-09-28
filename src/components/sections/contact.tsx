@@ -18,8 +18,8 @@ const formSchema = z.object({
 });
 
 const socialLinks = [
-    { icon: <Github />, href: "#", name: "GitHub" },
-    { icon: <Linkedin />, href: "#", name: "LinkedIn" },
+    { icon: <Github />, href: "https://github.com/AkashAnuragi", name: "GitHub" },
+    { icon: <Linkedin />, href: "https://www.linkedin.com/in/akash-anuragi/", name: "LinkedIn" },
     { icon: <Twitter />, href: "#", name: "Twitter" },
 ];
 
