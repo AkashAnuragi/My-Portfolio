@@ -50,7 +50,7 @@ export default function ResumeSection() {
 
                 <div className="mt-16 text-center">
                     <Button asChild size="lg">
-                        <Link href="https://drive.google.com/uc?export=download&id=12YvrQVfFaXF2wYEQOX_3VYzj-oGYifW1" target="_blank" download>
+                        <Link href="https://drive.google.com/uc?export=download&id=1t43myN3Dqv_NoPODz9enk6reGMJiGNaD" target="_blank" download>
                             <Download className="mr-2 h-5 w-5" />
                             Download Resume
                         </Link>
