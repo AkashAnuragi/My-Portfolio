@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Code, Database, Server, Smartphone, Wand2, BarChart, FileJson } from "lucide-react";
 
 const skills = [
@@ -13,24 +12,20 @@ const skills = [
   { name: "Java", icon: <FileJson className="h-4 w-4"/> },
 ];
 
-const profileImage = PlaceHolderImages.find(p => p.id === 'profile-photo');
-
 export default function AboutSection() {
   return (
     <section id="about" className="w-full py-24 sm:py-32 bg-secondary/50">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
           <div className="group relative flex justify-center">
-            {profileImage && (
-              <Image
-                src={profileImage.imageUrl}
-                alt={profileImage.description}
-                width={500}
-                height={500}
-                data-ai-hint={profileImage.imageHint}
-                className="rounded-xl object-cover shadow-lg transition-transform duration-500 group-hover:scale-105 group-hover:shadow-2xl"
-              />
-            )}
+            <Image
+              src="/images/profile.jpg"
+              alt="A profile photo of Akash Anuragi"
+              width={500}
+              height={500}
+              data-ai-hint="portrait person"
+              className="rounded-xl object-cover shadow-lg transition-transform duration-500 group-hover:scale-105 group-hover:shadow-2xl"
+            />
           </div>
           <div className="space-y-8">
             <div className="space-y-4">
