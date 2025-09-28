@@ -34,7 +34,7 @@ export default function Header() {
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         <Link href="#home" className="text-2xl font-bold text-primary">
-          Visiofolio 3D
+          Akash Anuragi
         </Link>
         <nav className="hidden items-center gap-6 md:flex">
           {navLinks.map((link) => (
@@ -58,7 +58,7 @@ export default function Header() {
             <SheetContent side="right">
               <div className="flex flex-col gap-6 p-6">
                 <Link href="#home" className="text-2xl font-bold text-primary" onClick={() => setOpen(false)}>
-                  Visiofolio 3D
+                  Akash Anuragi
                 </Link>
                 <nav className="flex flex-col gap-4">
                   {navLinks.map((link) => (

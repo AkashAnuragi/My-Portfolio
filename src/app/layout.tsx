@@ -4,8 +4,8 @@ import { Toaster } from '@/components/ui/toaster';
 import EasterEgg from '@/components/easter-egg';
 
 export const metadata: Metadata = {
-  title: 'Visiofolio 3D | Interactive Portfolio',
-  description: 'A modern, interactive, 3D portfolio website created with Next.js and Tailwind CSS.',
+  title: 'Akash Anuragi | Interactive Portfolio',
+  description: 'A modern, interactive, 3D portfolio website for Akash Anuragi, created with Next.js and Tailwind CSS.',
 };
 
 export default function RootLayout({

@@ -38,7 +38,7 @@ export default function HeroSection() {
 
       <div className="relative z-10 text-center animate-fade-in-up">
         <h1 className="font-headline text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
-          <span className="block">Hello, I'm a Developer</span>
+          <span className="block">Hello, I'm Akash Anuragi</span>
           <span className="block text-primary">Building 3D Web Experiences</span>
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-lg text-foreground/80 md:text-xl">
