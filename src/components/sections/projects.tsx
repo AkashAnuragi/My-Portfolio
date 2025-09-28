@@ -8,20 +8,20 @@ import { Github, ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    title: "Project One",
-    description: "A cool web application that does amazing things. Built with modern technologies for a great user experience.",
-    image: PlaceHolderImages.find(p => p.id === 'project-1'),
-    tags: ["Next.js", "Tailwind CSS", "TypeScript"],
+    title: "Real-Time Chat Application",
+    description: "Developed a real-time chat application supporting over 500 concurrent users with seamless message delivery and minimal latency.",
+    image: PlaceHolderImages.find(p => p.id === 'project-chat'),
+    tags: ["React.js", "Node.js", "Socket.IO", "MongoDB"],
     liveUrl: "#",
-    githubUrl: "https://github.com/AkashAnuragi",
+    githubUrl: "https://github.com/AkashAnuragi/Chat-Application",
   },
   {
-    title: "Project Two",
-    description: "An innovative platform for collaborating on creative projects. Features real-time updates and a slick interface.",
-    image: PlaceHolderImages.find(p => p.id === 'project-2'),
-    tags: ["React", "Firebase", "shadcn/ui"],
+    title: "Weather Webpage",
+    description: "Developed a real-time weather app with a fully responsive UI, integrating OpenWeatherMap API for data from over 250,000 cities.",
+    image: PlaceHolderImages.find(p => p.id === 'project-weather'),
+    tags: ["HTML", "CSS", "JavaScript", "API"],
     liveUrl: "#",
-    githubUrl: "https://github.com/AkashAnuragi",
+    githubUrl: "https://github.com/AkashAnuragi/weather-webpage",
   },
   {
     title: "Project Three",

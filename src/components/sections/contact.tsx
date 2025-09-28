@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { useToast } from "@/hooks/use-toast";
-import { Github, Linkedin, Twitter } from "lucide-react";
+import { Github, Linkedin } from "lucide-react";
 import Link from "next/link";
 
 const formSchema = z.object({
@@ -20,7 +20,6 @@ const formSchema = z.object({
 const socialLinks = [
     { icon: <Github />, href: "https://github.com/AkashAnuragi", name: "GitHub" },
     { icon: <Linkedin />, href: "https://www.linkedin.com/in/akash-anuragi/", name: "LinkedIn" },
-    { icon: <Twitter />, href: "#", name: "Twitter" },
 ];
 
 export default function ContactSection() {
@@ -48,7 +47,7 @@ export default function ContactSection() {
           <div className="space-y-6">
             <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Get In Touch</h2>
             <p className="max-w-[600px] text-lg text-foreground/80 md:text-xl">
-              Have a project in mind, or just want to say hi? Feel free to send me a message.
+              Have a project in mind, or just want to say hi? Feel free to send me a message. My email is akashanuragi543@gmail.com
             </p>
             <div className="flex space-x-4">
                 {socialLinks.map((social) => (

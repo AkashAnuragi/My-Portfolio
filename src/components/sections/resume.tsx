@@ -4,9 +4,8 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import Link from "next/link";
 
 const timelineData = [
-    { type: "Work", icon: <Briefcase />, date: "2021 - Present", title: "Senior Frontend Developer", subtitle: "Tech Solutions Inc.", description: "Leading the development of user-facing features for our flagship product, mentoring junior developers, and improving our codebase." },
-    { type: "Work", icon: <Briefcase />, date: "2019 - 2021", title: "Frontend Developer", subtitle: "WebCrafters LLC", description: "Developed and maintained responsive websites for various clients, focusing on performance and modern UI/UX principles." },
-    { type: "Education", icon: <GraduationCap />, date: "2015 - 2019", title: "B.S. in Computer Science", subtitle: "University of Technology", description: "Graduated with honors, focusing on web development and human-computer interaction." }
+    { type: "Work", icon: <Briefcase />, date: "Oct 2022 - Nov 2022", title: "Full Stack Developer Intern", subtitle: "Robustresults Pvt. Ltd.", description: "Implemented UI components with HTML, CSS, & JavaScript. Built and maintained web apps using React.js and Firebase." },
+    { type: "Education", icon: <GraduationCap />, date: "2021 - 2025", title: "B.Tech in Computer Science", subtitle: "IIMT Engineering College, Meerut", description: "Studying Computer Science and Engineering, affiliated with AKTU." }
 ];
 
 export default function ResumeSection() {

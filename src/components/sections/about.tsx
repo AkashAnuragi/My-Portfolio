@@ -1,15 +1,16 @@
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { Code, Database, Server, Smartphone, Wand2 } from "lucide-react";
+import { Code, Database, Server, Smartphone, Wand2, BarChart, FileJson } from "lucide-react";
 
 const skills = [
-  { name: "React", icon: <Code className="h-4 w-4"/> },
-  { name: "Next.js", icon: <Code className="h-4 w-4"/> },
-  { name: "JavaScript", icon: <Code className="h-4 w-4"/> },
-  { name: "CSS & Tailwind", icon: <Wand2 className="h-4 w-4"/> },
+  { name: "React.js", icon: <Code className="h-4 w-4"/> },
   { name: "Node.js", icon: <Server className="h-4 w-4"/> },
-  { name: "Databases", icon: <Database className="h-4 w-4"/> },
-  { name: "Responsive Design", icon: <Smartphone className="h-4 w-4"/> },
+  { name: "JavaScript", icon: <Code className="h-4 w-4"/> },
+  { name: "Tailwind CSS", icon: <Wand2 className="h-4 w-4"/> },
+  { name: "MongoDB", icon: <Database className="h-4 w-4"/> },
+  { name: "SQL", icon: <Database className="h-4 w-4"/> },
+  { name: "Power BI", icon: <BarChart className="h-4 w-4"/> },
+  { name: "Java", icon: <FileJson className="h-4 w-4"/> },
 ];
 
 const profileImage = PlaceHolderImages.find(p => p.id === 'profile-photo');
@@ -35,7 +36,7 @@ export default function AboutSection() {
             <div className="space-y-4">
               <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">About Me</h2>
               <p className="max-w-[600px] text-lg text-foreground/80 md:text-xl">
-                I'm a passionate developer with a love for creating beautiful and intuitive user experiences. With a background in both design and development, I enjoy bringing ideas to life in the browser, crafting everything from stunning landing pages to complex web applications.
+                I'm a full-stack developer with a passion for creating dynamic and responsive web applications. I have experience building and maintaining applications using modern technologies like React.js and Node.js, with a strong foundation in backend services like Firebase. I'm a collaborative problem-solver, quick to adapt and learn new technologies.
               </p>
             </div>
             <div className="space-y-4">
