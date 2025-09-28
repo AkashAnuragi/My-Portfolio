@@ -10,6 +10,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { useToast } from "@/hooks/use-toast";
 import { Github, Linkedin } from "lucide-react";
 import Link from "next/link";
+import { sendEmail } from "@/ai/flows/send-email-flow";
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -30,14 +31,20 @@ export default function ContactSection() {
   });
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
-    // Here you would typically send the data to a server
-    console.log(values);
-    await new Promise(resolve => setTimeout(resolve, 1000)); // Simulate API call
-    toast({
-      title: "Message Sent! ✨",
-      description: "Thanks for reaching out. I'll get back to you soon.",
-    });
-    form.reset();
+    try {
+      await sendEmail(values);
+      toast({
+        title: "Message Sent! ✨",
+        description: "Thanks for reaching out. I'll get back to you soon.",
+      });
+      form.reset();
+    } catch (error) {
+      toast({
+        title: "Uh oh! Something went wrong.",
+        description: "There was a problem with your request.",
+        variant: "destructive",
+      });
+    }
   }
 
   return (
@@ -62,7 +69,7 @@ export default function ContactSection() {
           </div>
           <div className="group [perspective:800px]">
             <Form {...form}>
-              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 rounded-lg border bg-card p-8 shadow-sm transition-transform duration-500 group-hover:[transform:rotateX(5deg)]">
+              <form onSubmit={form. handleSubmit(onSubmit)} className="space-y-6 rounded-lg border bg-card p-8 shadow-sm transition-transform duration-500 group-hover:[transform:rotateX(5deg)]">
                 <FormField control={form.control} name="name" render={({ field }) => (
                   <FormItem>
                     <FormLabel>Name</FormLabel>
