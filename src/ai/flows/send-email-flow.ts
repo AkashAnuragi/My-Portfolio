@@ -10,9 +10,9 @@ import { ai } from '@/ai/genkit';
 import { z } from 'genkit';
 import { Resend } from 'resend';
 
-// You would typically store your API key in an environment variable
-// For this example, we are leaving it hardcoded for simplicity, but in a real app, you must use an environment variable.
-const resend = new Resend('re_123456789');
+// The Resend API key is retrieved from environment variables for security.
+// The exclamation mark (!) asserts that the value will be present at runtime.
+const resend = new Resend(process.env.RESEND_API_KEY!);
 
 const SendEmailInputSchema = z.object({
   name: z.string().describe('The name of the person sending the email.'),
